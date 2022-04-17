@@ -10,7 +10,7 @@ end)
 RegisterNetEvent('esx_lipaspaketti:palkki')
 AddEventHandler('esx_lipaspaketti:palkki', function()
 	local playerPed = GetPlayerPed(-1)
-	ExecuteCommand('e bumbin')
+    	TaskStartScenarioInPlace(ukko, "PROP_HUMAN_BUM_BIN", 0, true)
 	TriggerEvent("mythic_progbar:client:progress", {
         name = "lippaittenkerays",
         duration = 50000,
