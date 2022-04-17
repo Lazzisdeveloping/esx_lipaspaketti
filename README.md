@@ -19,3 +19,5 @@ https://github.com/HalCroves/mythic_progbar
 #Konfigurointi
 
 • sv.lua --> Rivi 13: Vaihda lippaan itemi
+
+• cl.lua --> Rivi 36: Vaihda omat reportti kommandit.
