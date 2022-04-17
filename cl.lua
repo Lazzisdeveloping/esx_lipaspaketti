@@ -27,7 +27,7 @@ AddEventHandler('esx_lipaspaketti:palkki', function()
 						
     }, function(canceled)
 		if not canceled then
-			ClearPedTasks(PlayerPedId())
+			ClearPedTasks(ukko)
 			ESX.TriggerServerCallback('esx_lipaspaketti:onkopakettia', function(onkopakettia)
 				if onkopakettia then
 					TriggerServerEvent('esx_lipaspaketti:lippaattaskuun')
@@ -37,6 +37,7 @@ AddEventHandler('esx_lipaspaketti:palkki', function()
 				end
 			end)
 		else
+			ClearPedTasks(ukko)
 			exports['mythic_notify']:DoHudText('error', 'Keskeytit avaamisen.')
 		end
 	end)
