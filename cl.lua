@@ -10,6 +10,7 @@ end)
 RegisterNetEvent('esx_lipaspaketti:palkki')
 AddEventHandler('esx_lipaspaketti:palkki', function()
 	local playerPed = GetPlayerPed(-1)
+	local ukko = PlayerPedId()
     	TaskStartScenarioInPlace(ukko, "PROP_HUMAN_BUM_BIN", 0, true)
 	TriggerEvent("mythic_progbar:client:progress", {
         name = "lippaittenkerays",
