@@ -16,7 +16,7 @@ https://github.com/JayMontana36/mythic_notify
 https://github.com/HalCroves/mythic_progbar
 
 
-#Konfigurointi
+# Konfigurointi
 
 • sv.lua --> Rivi 13: Vaihda lippaan itemi
 
